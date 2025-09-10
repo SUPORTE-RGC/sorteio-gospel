@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Sorteio Gospel FM</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body>
+    <div class="led-container">
+        <div class="painel">
+            <div id="resultado"></div>
+        </div>
+    </div>
+    
+    <h1>Sorteio Gospel FM</h1>
+
+    <div class="icone-container">
+        <label for="fileInput" id="uploadIcon" class="icone" title="Carregar Planilha">
+            <span>⬆</span>
+        </label>
+        
+        <button id="sortearIcon" class="icone" title="Sortear" disabled>
+            <span>🎲</span>
+        </button>
+
+        <button id="reiniciarIcon" class="icone" title="Reiniciar" disabled>
+            <span>🔄</span>
+        </button>
+    </div>
+
+    <input type="file" id="fileInput" accept=".xlsx,.csv" class="hidden" />
+    
+    <script defer src="assets/js/script.js"></script>
+</body>
+</html>
